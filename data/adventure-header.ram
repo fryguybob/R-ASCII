@@ -1,0 +1,31 @@
+# g is graph offset
+# t is text offset
+# r is graph record size
+# w is text record size
+# s is state
+
+Ig
+1000
+Lgt
++g1g
+Lgr
++g1g
+Lgw
++g1g
+
+*wsT # loop:
++tTT
+!T01
+!i02
+li04 # if i < 0: goto loop
++i1i
+*rsT
++gTT
+LTn
+-nin
+ln0a # if i > n: goto loop
++iTT
+LTs
+<s02 # if s < 0: goto done
+e00e # goto loop
+H    # done:

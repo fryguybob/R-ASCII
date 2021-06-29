@@ -1,0 +1,141 @@
+Entrance:
+
+You are in the entrance to a cave.
+There is a faint sound coming from deeper within.
+
+Cave) Follow sound.
+Forest) Leave cave.
+
+Cave:
+
+You are in a cave.  It is surprisingly warm and cozy.
+There is the sound of snoring ahead.
+
+Sleeping) Go deeper.
+Entrance) Go higher.
+
+Sleeping:
+
+You see a bear sleeping.  On the wall is a hand-made
+sign that reads "Blahh's Den".
+
+Wakeup) Wake up the bear.
+Cave) Go higher.
+
+Wakeup:
+
+You wake up the bear.  It slowly gets on it's
+feet and looks at you.  Then it smiles and gives
+you a big bear hug... and falls back asleep.
+
+Sleeping)
+
+Forest:
+
+You are in the forest.  It is fall and there are
+bright colors everywhere.  The air is brisk and
+the sun is bright.  A path leads off in one direction
+and you see some smoke rising in the opposite direction.
+Behind you there is the entrance to a cave.
+
+Kiln) Go toward smoke.
+Stairs) Follow path.
+Entrance) Enter the cave.
+
+Kiln:
+
+You see a kiln in a clearing with a pile of
+firewood next to it and a roaring fire within.
+Looking in from the top you see orange glowing
+bowls.  Further on you see the sunlight glinting.
+A path goes into the forest.
+
+Forest) Follow the path.
+Lake) Follow the glinting light.
+
+Lake:
+
+You are on the shore of a large lake.  The lake
+has gentle waves pushed by a calm breeze.  In the
+distance down the shoreline you see a mountain.
+There is a path into the forest behind you.
+
+Kiln) Follow the path into the forest.
+
+Stairs:
+
+You come to a tree with stairs spiraling up around
+the trunk leading to a platform above.
+A dirt path leads into the forest behind you
+and ahead of you while a rocky path leads away
+behind the tree.
+
+Tree) Climb the stairs.
+Forest) Follow the dirt path behind you.
+Canyon) Follow the dirt path ahead of you.
+Mountain) Follow the rocky path.
+
+Canyon:
+
+You come to cliff that drops down into a deep canyon.
+There are two large polls at the edge tied to thick
+ropes anchored to the rocky slab of the cliff edge.
+A similar pair of polls is on the far side of the
+canyon.  Far down at the bottom of the canyon a river
+flows with foamy white water.  A path leads back into
+the forest.
+
+Stairs) Follow the path into the forest.
+
+Mountain:
+
+You follow the rocky path as it climbs steeply up.
+Soon you are following switchbacks up a cliff face.
+Finally you must climb to continue.  At last you
+reach the top of the mountain, tired from the journey.
+You are not about to climb back down the way you came.
+You look back and the view is spectacular, fall colors
+in a large forest below bordered by a large lake on
+your left and a huge canyon on your right.  In the
+trees of the forest you can see a large complex of
+bridges and platforms.  A small stream flows away
+down a gentler side of the mountain.
+
+Slide) Follow the stream.
+
+Slide:
+
+You are hot from all the climbing so you decide
+to jump in the stream.  You float for a while
+drifting in the cool water until you notice that
+the stream edges are now higher and curiously
+smooth.  The bottom is slippery and the stream
+is getting faster.  You are soon rushing down
+a water slide that alternates from fast downward
+stretches and banked hairpin curves.  At the bottom
+of the mountain you shoot out into the lake.
+
+Lake) Swim to shore.
+
+Tree:
+
+You climb the stairs and reach the platform.
+Immediately you see that this is just part of
+a vast tree house complex built by a master
+woodcrafter, rope maker, and friend to all the
+woodland creatures.  A simple clay bowl with
+freshly picked huckleberries sits on a ornately
+carved table.  The carvings seem to tell stories
+of the adventures of a baby skunk.
+
+Eat) Eat some huckleberries.
+Stairs) Go down the stairs.
+
+Eat:
+
+You eagerly eat some of the fresh huckleberries.
+They are the best food you have ever tested.
+Completely satisfied you fall asleep.
+
+Halt)
+
