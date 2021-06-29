@@ -55,33 +55,33 @@ bytes will either be registers or immediate values given as hexadecimal digits.
 The opcode will dictate if a character is a register or hex digit by position.
 
 The following tables describes all the opcodes and how the
-three characters that follow are used, $S$ for source register,
-$D$ for destination register, $R$ for read memory at register address,
-$W$ for write memory at register address, $M$ for multiple use register,
-$H$ for hex digit, and
+three characters that follow are used, *S* for source register,
+*D* for destination register, *R* for read memory at register address,
+*W* for write memory at register address, *M* for multiple use register,
+*H* for hex digit, and
 _ for unused.
 
 | Op |   |   |   | Description |
 | --- | --- | --- | --- | --- |
-| `L` | $R$ | $D$ | _ | **Load** from memory at the address in register $R$ and put the value in register $D$. |
-| `S` | $S$ | $W$ | _ | **Store** the value from register $S$ to memory at the address in register $W$. |
+| `L` | *R* | *D* | _ | **Load** from memory at the address in register *R* and put the value in register *D*. |
+| `S` | *S* | *W* | _ | **Store** the value from register *S* to memory at the address in register *W*. |
 |     |     |     |   |   |
-| `+` | $S_1$ | $S_2$ | $D$ | **Add** the values from registers $S_1$ and $S_2$ and put the result in register $D$. |
-| `-` | $S_1$ | $S_2$ | $D$ | **Subtract** the value of registers $S_2$ from $S_1$ and put the result in register $D$. |
-| `*` | $S_1$ | $S_2$ | $D$ | **Multiply** the values from registers $S_1$ and $S_2$ and put the result in register $D$. |
-| `/` | $S_1$ | $S_2$ | $D$ | **Divide** the value of registers $S_2$ from $S_1$ and put the result in register $D$. |
-| `%` | $S_1$ | $S_2$ | $D$ | Divide the value of registers $S_2$ from $S_1$ and put the **remainder** in register $D$. |
+| `+` | *S<sub>1</sub>* | *S<sub>2</sub>* | *D* | **Add** the values from registers *S<sub>1</sub>* and *S<sub>2</sub>* and put the result in register *D*. |
+| `-` | *S<sub>1</sub>* | *S<sub>2</sub>* | *D* | **Subtract** the value of registers *S<sub>2</sub>* from *S<sub>1</sub>* and put the result in register *D*. |
+| `*` | *S<sub>1</sub>* | *S<sub>2</sub>* | *D* | **Multiply** the values from registers *S<sub>1</sub>* and *S<sub>2</sub>* and put the result in register *D*. |
+| `/` | *S<sub>1</sub>* | *S<sub>2</sub>* | *D* | **Divide** the value of registers *S<sub>2</sub>* from *S<sub>1</sub>* and put the result in register *D*. |
+| `%` | *S<sub>1</sub>* | *S<sub>2</sub>* | *D* | Divide the value of registers *S<sub>2</sub>* from *S<sub>1</sub>* and put the **remainder** in register *D*. |
 |     |     |     |   |   |
-| `B` | $S$ | $H_h$ | $H_l$ | **Branch**.  Add $H_hH_l$ times $2$ to the PC if the value in register $S$ is *not* zero. |
-| `b` | $S$ | $H_h$ | $H_l$ | **Branch**.  Subtract $H_hH_l$ times $2$ from the PC if the value in register $S$ is *not* zero. |
-| `E` | $S$ | $H_h$ | $H_l$ | **Branch**.  Add $H_hH_l$ times $2$ to the PC if the value in register $S$ is *equal* zero. |
-| `e` | $S$ | $H_h$ | $H_l$ | **Branch**.  Subtract $H_hH_l$ times $2$ from the PC if the value in register $S$ is *equal* zero. |
-| `<` | $S$ | $H_h$ | $H_l$ | **Branch**.  Add $H_hH_l$ times $2$ to the PC if the value in register $S$ is *less than* zero. |
-| `l` | $S$ | $H_h$ | $H_l$ | **Branch**.  Subtract $H_hH_l$ times $2$ from the PC if the value in register $S$ is *less than* zero. |
-| `>` | $S$ | $H_h$ | $H_l$ | **Branch**.  Add $H_hH_l$ times $2$ to the PC if the value in register $S$ is *greater than* zero. |
-| `g` | $S$ | $H_h$ | $H_l$ | **Branch**.  Subtract $H_hH_l$ times $2$ from the PC if the value in register $S$ is *greater than* zero. |
+| `B` | *S* | *H_h* | *H_l* | **Branch**.  Add *H_hH_l* times *2* to the PC if the value in register *S* is *not* zero. |
+| `b` | *S* | *H_h* | *H_l* | **Branch**.  Subtract *H_hH_l* times *2* from the PC if the value in register *S* is *not* zero. |
+| `E` | *S* | *H_h* | *H_l* | **Branch**.  Add *H_hH_l* times *2* to the PC if the value in register *S* is *equal* zero. |
+| `e` | *S* | *H_h* | *H_l* | **Branch**.  Subtract *H_hH_l* times *2* from the PC if the value in register *S* is *equal* zero. |
+| `<` | *S* | *H_h* | *H_l* | **Branch**.  Add *H_hH_l* times *2* to the PC if the value in register *S* is *less than* zero. |
+| `l` | *S* | *H_h* | *H_l* | **Branch**.  Subtract *H_hH_l* times *2* from the PC if the value in register *S* is *less than* zero. |
+| `>` | *S* | *H_h* | *H_l* | **Branch**.  Add *H_hH_l* times *2* to the PC if the value in register *S* is *greater than* zero. |
+| `g` | *S* | *H_h* | *H_l* | **Branch**.  Subtract *H_hH_l* times *2* from the PC if the value in register *S* is *greater than* zero. |
 |     |     |     |   |   |
-| `R` | $S$ | _ | _ | **Return**.  Set PC to the value in register $S$. |
+| `R` | *S* | _ | _ | **Return**.  Set PC to the value in register *S*. |
 | `H` | _ | _ | _ | **Halt**.  Stop executing. |
 
 
@@ -89,8 +89,8 @@ There are two additional instructions that take up 8 bytes each:
 
 | Op  |     |     |     |     |     |     |     | Description |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `J` | $D$ | _ | _ | $H_3$ | $H_2$ | $H_1$ | $H_0$ | **Jump**. Set register $D$ to the value of PC plus 4.  Set PC to the value given by the hex string $H_3H_2H_1H_0$. |
-| `I` | $D$ | _ | _ | $H_3$ | $H_2$ | $H_1$ | $H_0$ | Load **Immediate**. Set register $D$ to the value given by the hex string $H_3H_2H_1H_0$.|
+| `J` | *D* | _ | _ | *H<sub>3</sub>* | *H<sub>2</sub>* | *H<sub>1</sub>* | *H<sub>0</sub>* | **Jump**. Set register *D* to the value of PC plus 4.  Set PC to the value given by the hex string *H<sub>3</sub>H<sub>2</sub>H<sub>1</sub>H<sub>0</sub>*. |
+| `I` | *D* | _ | _ | *H<sub>3</sub>* | *H<sub>2</sub>* | *H<sub>1</sub>* | *H<sub>0</sub>* | Load **Immediate**. Set register *D* to the value given by the hex string *H<sub>3</sub>H<sub>2</sub>H<sub>1</sub>H<sub>0</sub>*.|
 
 The machine itself is 16-bit, each register holds a 16-bit value.
 Each instruction takes up either two or four memory locations. The
@@ -109,7 +109,7 @@ R-ASCII ISA supports operating system interaction with a "syscall" instruction:
 
 | Op |   |   |   | Description |
 | --- | --- | --- | --- | --- |
-| `!` | $M$ | $H_h$ | $H_l$ | **Syscall**.  Invoke operating system functionality number $H_hH_l$ (in hexadecimal) reading from and/or writing to the register given as the second character. |
+| `!` | *M* | *H_h* | *H_l* | **Syscall**.  Invoke operating system functionality number *H_hH_l* (in hexadecimal) reading from and/or writing to the register given as the second character. |
 
 We will only have very simple I/O operations:
 
